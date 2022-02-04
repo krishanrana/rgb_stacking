@@ -51,7 +51,7 @@ _OBSERVATION_STACK_DEPTH = 3
 _ACTION_OBS_STACK_DEPTH = 2
 
 # Number of steps in an episode
-_MAX_STEPS = 400
+_MAX_STEPS = 300
 
 # Timestep of the physics simulation.
 _PHYSICS_TIMESTEP = 0.0005

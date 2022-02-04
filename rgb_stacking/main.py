@@ -29,6 +29,8 @@ import numpy as np
 from rgb_stacking import environment
 from rgb_stacking.utils import policy_loading
 
+import pdb
+
 _TEST_OBJECT_TRIPLETS = tuple(rgb_object.PROP_TRIPLETS_TEST.keys())
 
 _ALL_OBJECT_TRIPLETS = _TEST_OBJECT_TRIPLETS + (
@@ -87,6 +89,7 @@ def main(argv: Sequence[str]) -> None:
     # Optionally load a policy trained on one of these environments.
     if _POLICY_OBJECT_TRIPLET.value is not None:
       policy_path = _POLICY_PATHS[_POLICY_OBJECT_TRIPLET.value]
+      pdb.set_trace()
       policy = policy_loading.policy_from_path(policy_path)
     else:
       policy = None
